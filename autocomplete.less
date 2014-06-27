@@ -1,0 +1,31 @@
+.autocompleteOut{
+	max-height: 100px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	border: solid 1px #000;
+	background: #ccc;
+	position: fixed;
+	z-index: 300;
+}
+
+.autocompleteElement{
+	display: block;
+	margin-bottom: 2px;
+	color: @textcolor;
+	border-bottom: solid 1px #ccc;
+	&.active{
+		color: #000;
+		background: #fff;
+		&:BEFORE{
+			content: "";
+			font-family: Bariol_Icons;
+		}
+	}
+}
+
+.autocompleteInput{
+	background: #ddd;
+	&.active{
+		color: #000;
+	}
+}
